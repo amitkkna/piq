@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "netlify-build": "netlify-deploy.bat"
+    "netlify-build": "bash netlify-deploy.sh"
   },
   "dependencies": {
     "@react-pdf/renderer": "^4.3.0",
