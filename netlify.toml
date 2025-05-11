@@ -1,9 +1,10 @@
 [build]
   command = "npm run build"
-  publish = ".next"
+  publish = "out"
 
 [build.environment]
   NETLIFY_NEXT_PLUGIN_SKIP = "true"
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+# We don't need the Next.js plugin for static export
+# [[plugins]]
+#   package = "@netlify/plugin-nextjs"

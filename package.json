@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "next build && node build-netlify.js",
     "start": "next start",
     "lint": "next lint",
-    "netlify-build": "bash netlify-deploy.sh"
+    "netlify-build": "next build && node build-netlify.js"
   },
   "dependencies": {
     "@react-pdf/renderer": "^4.3.0",
